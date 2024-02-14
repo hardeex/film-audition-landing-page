@@ -1,0 +1,190 @@
+/* 
+Developer - Adewale
+Company - Afriwood Streams
+Date - 14th of Febrauary, 2924
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; 
+}
+
+.audition-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.audition-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.ad-copy {
+    margin-bottom: 40px;
+}
+
+.ad-copy h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.ad-copy p {
+    font-size: 14px;
+}
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expect {
+    margin-right: 40px;
+}
+
+.expect h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.expect ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.expect li {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#signup input[type="text"],
+#signup input[type="email"],
+#signup input[type="tel"],
+#signup button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#signup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#signup button:hover {
+    background-color: #0056b3;
+}
+
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff; 
+    animation: bounce 1s infinite alternate; 
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-10px); 
+    }
+    to {
+        transform: translateY(10px); 
+    }
+}
+
+.typewriter li {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Apply the typewriter animation to each list item */
+.typewriter li:nth-child(1) {
+    animation: typewriter 2s steps(30) 1s forwards; /* Delay the first item by 1 second */
+}
+.typewriter li:nth-child(2) {
+    animation: typewriter 2s steps(30) 2s forwards; /* Delay the second item by 2 seconds */
+}
+.typewriter li:nth-child(3) {
+    animation: typewriter 2s steps(30) 3s forwards; /* Delay the third item by 3 seconds */
+}
+.typewriter li:nth-child(4) {
+    animation: typewriter 2s steps(30) 4s forwards; /* Delay the fourth item by 4 seconds */
+}
+
+/* Keyframe animation for typewriter effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .audition-container {
+        position: relative;        
+        height: 125vh;    
+    }
+    
+    .ad-copy h2 {
+        font-size: 24px;
+    }
+    .ad-copy p {
+        font-size: 12px;
+    }
+    .expect h3 {
+        font-size: 16px;
+    }
+    .expect li {
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+    #signup input[type="text"],
+    #signup input[type="email"],
+    #signup input[type="tel"],
+    #signup button {
+        max-width: 250px;
+    }
+
+    .register-form {
+        flex-direction: column; 
+    }
+}
