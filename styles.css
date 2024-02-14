@@ -1,5 +1,5 @@
 /* 
-Developer - Adewale
+Developer - Adewale, webmasterjdd@gmail.com
 Company - Afriwood Streams
 Date - 14th of Febrauary, 2924
 
@@ -12,11 +12,16 @@ body {
     background-color: #f2f2f2; 
 }
 
-.audition-container {
-    position: relative;
+.audition-container{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    
+}
+
+
+.audition-container img{
+    width: 100%;
+    height: 100%;
 }
 
 .video-bg {
@@ -48,32 +53,29 @@ body {
     z-index: 1;
 }
 
-.ad-copy {
-    margin-bottom: 40px;
-}
 
 .ad-copy h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .ad-copy p {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .register-form {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.expect {
-    margin-right: 40px;
-}
 
+.expect{
+    margin-right: 1rem;
+}
 .expect h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.125rem;
+   
 }
 
 .expect ul {
@@ -84,8 +86,8 @@ body {
 }
 
 .expect li {
-    font-size: 12px;
-    margin-bottom: 10px;
+    font-size: 0.9rem;
+    margin-bottom: .625rem;
 }
 
 #signup input[type="text"],
@@ -93,10 +95,9 @@ body {
 #signup input[type="tel"],
 #signup button {
     display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
+    margin-bottom: .625rem;
+    padding: .625rem;
+    max-width: 500px;    
 }
 
 #signup button {
@@ -111,7 +112,7 @@ body {
 }
 
 #timer {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: bold;
     color: #007bff; 
     animation: bounce 1s infinite alternate; 
@@ -119,10 +120,10 @@ body {
 
 @keyframes bounce {
     from {
-        transform: translateY(-10px); 
+        transform: translateY(-0.625rem); 
     }
     to {
-        transform: translateY(10px); 
+        transform: translateY(0.625rem); 
     }
 }
 
@@ -155,36 +156,57 @@ body {
     }
 }
 
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-    .audition-container {
-        position: relative;        
-        height: 125vh;    
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+    .audition-container{
+        height: 120vh;
+    }
+    
+    .ad-copy {
+        margin-bottom: 1%; /* Use percentage for better responsiveness */
+        padding: 0 20px; /* Add padding from both edges */
+        width: 100%; /* Ensure container doesn't exceed full width */
+        box-sizing: border-box; /* Include padding in the element's total width */
+        margin: 0 auto;
+        margin-top: 9rem;
     }
     
     .ad-copy h2 {
-        font-size: 24px;
+        font-size: 1.2rem; /* Change font size to rem for better scalability */
+        margin-bottom: 1rem; /* Use rem for better scalability */
     }
+    
     .ad-copy p {
-        font-size: 12px;
+        font-size: 0.8rem; /* Use rem for better scalability */
+        text-align: center; /* Center the text horizontally */
+        margin-bottom: 1rem; /* Use rem for better scalability */
+        word-wrap: break-word; /* Allow long words to break and wrap */
     }
-    .expect h3 {
-        font-size: 16px;
+    
+  
+    .register-form {
+        flex-direction: column; /* Switch to column layout on smaller screens */
+        align-items: stretch; /* Allow flex items to stretch to fit container width */
+        
     }
-    .expect li {
-        font-size: 10px;
+
+    .register-form ul li{
         text-align: center;
     }
 
-
-    #signup input[type="text"],
-    #signup input[type="email"],
-    #signup input[type="tel"],
-    #signup button {
-        max-width: 250px;
+    
+    .expect, #signup {
+        margin: 0; /* Remove margin to ensure full width on smaller screens */
+        max-width: 100%; /* Allow sections to take up full width */
     }
 
-    .register-form {
-        flex-direction: column; 
+    form input {
+        width: 100%;
     }
+
+    
+   
 }
