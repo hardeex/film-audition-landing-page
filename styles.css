@@ -134,16 +134,16 @@ body {
 
 /* Apply the typewriter animation to each list item */
 .typewriter li:nth-child(1) {
-    animation: typewriter 2s steps(30) 1s forwards; /* Delay the first item by 1 second */
+    animation: typewriter 2s steps(30) 1s forwards; 
 }
 .typewriter li:nth-child(2) {
-    animation: typewriter 2s steps(30) 2s forwards; /* Delay the second item by 2 seconds */
+    animation: typewriter 2s steps(30) 2s forwards; 
 }
 .typewriter li:nth-child(3) {
-    animation: typewriter 2s steps(30) 3s forwards; /* Delay the third item by 3 seconds */
+    animation: typewriter 2s steps(30) 3s forwards;
 }
 .typewriter li:nth-child(4) {
-    animation: typewriter 2s steps(30) 4s forwards; /* Delay the fourth item by 4 seconds */
+    animation: typewriter 2s steps(30) 4s forwards; 
 }
 
 /* Keyframe animation for typewriter effect */
@@ -166,30 +166,30 @@ body {
     }
     
     .ad-copy {
-        margin-bottom: 1%; /* Use percentage for better responsiveness */
-        padding: 0 20px; /* Add padding from both edges */
-        width: 100%; /* Ensure container doesn't exceed full width */
-        box-sizing: border-box; /* Include padding in the element's total width */
+        margin-bottom: 1%; 
+        padding: 0 20px; 
+        width: 100%; 
+        box-sizing: border-box; 
         margin: 0 auto;
         margin-top: 9rem;
     }
     
     .ad-copy h2 {
-        font-size: 1.2rem; /* Change font size to rem for better scalability */
-        margin-bottom: 1rem; /* Use rem for better scalability */
+        font-size: 1.2rem; 
+        margin-bottom: 1rem; 
     }
     
     .ad-copy p {
-        font-size: 0.8rem; /* Use rem for better scalability */
-        text-align: center; /* Center the text horizontally */
-        margin-bottom: 1rem; /* Use rem for better scalability */
-        word-wrap: break-word; /* Allow long words to break and wrap */
+        font-size: 0.8rem; 
+        text-align: center; 
+        margin-bottom: 1rem; 
+        word-wrap: break-word; 
     }
     
   
     .register-form {
-        flex-direction: column; /* Switch to column layout on smaller screens */
-        align-items: stretch; /* Allow flex items to stretch to fit container width */
+        flex-direction: column; 
+        align-items: stretch; 
         
     }
 
@@ -199,8 +199,8 @@ body {
 
     
     .expect, #signup {
-        margin: 0; /* Remove margin to ensure full width on smaller screens */
-        max-width: 100%; /* Allow sections to take up full width */
+        margin: 0; 
+        max-width: 100%; 
     }
 
     form input {
